@@ -1,0 +1,216 @@
+.footer {
+    background: #EBEBEB;
+    padding-top: 54px;
+    padding-bottom: 54px;
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 80px;
+        }
+    }
+
+    &__years {
+        max-width: 91px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--black-blue);
+    }
+
+    &__link {
+        padding-left: 33px;
+    }
+    &__phone {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 39px;
+        & span a{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 21px;
+            color: var(--black-blue);
+            text-decoration: none;
+            margin-bottom: 4px;
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            top: 17px;
+            left: -24px;
+            width: 13px;
+            height: 13px;
+            background-image: url('../images/footer-call.svg');
+            background-repeat: no-repeat;
+        }
+
+        &:hover{
+            &::before{
+                transform: rotate(15deg);
+               
+            }
+        }
+    }
+    &__callback {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--black-blue);
+        text-decoration: none;
+    }
+    &__city {
+        display: flex;
+        align-items: center;
+        & img{
+            margin-right: 16px;
+        }
+    }
+    &__city-name {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--black-blue);
+    }
+    &__made {
+
+    }
+    &__made-text {
+        max-width: 210px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: var(--black-blue);
+        & a{
+            max-width: 210px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: var(--black-blue);
+            text-decoration: none;
+
+        }
+    }
+
+    &__franchise {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    &__franchise-icon {
+        margin-right: 9px;
+    }
+
+    &__franchise-info {
+        max-width: 177px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--black-blue);
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 1340px) {
+       
+    }
+    @media screen and (max-width: 992px) {
+    
+    }
+    @media screen and (max-width: 768px) {
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+
+        &__phone{
+            padding-right: 0px;
+            margin-bottom: 50px;
+        }
+
+        &__link{
+            padding-left: 0px;
+            margin-bottom: 50px;
+        }
+
+        &__item{
+            &:not(:last-child){
+                margin-bottom: 0px;
+            }
+        }
+    
+    }
+    @media screen and (max-width: 576px) {
+        &{
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+
+        &__list{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__franchise{
+            margin-bottom: 30px;
+        }
+
+        &__made-text{
+            margin-bottom: 30px;
+        }
+
+        
+        &__phone{
+            padding-right: 0px;
+            margin-bottom: 30px;
+        }
+
+        &__item{
+            margin-bottom: 30px;
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+
+        &__link{
+            padding-left: 0px;
+            margin-bottom: 30px;
+        }
+    
+    }
+    @media screen and (max-width: 350px) {
+    
+    }
+}
+

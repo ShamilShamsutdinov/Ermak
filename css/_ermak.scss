@@ -1,0 +1,1080 @@
+.ermak {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    background: #EEEEEE;
+    overflow: hidden;
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: url('../images/business-corn.webp');
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+   
+
+    &__one-back{
+        position: relative;
+        background-image: url('../images/ermak-back-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+
+    }
+
+    &__two-back{
+        position: relative;
+        background-image: url('../images/ermak-back-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &__title-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 93px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: var(--red);
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        max-width: 847px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: var(--black-blue);
+    }
+
+    &__content {
+    }
+    &__top-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 87px;
+    }
+    &__card {
+        background: var(--black-blue);
+        border-radius: 4px;
+        padding: 51px 0px 0px 0px;
+        margin-bottom: 88px;
+    }
+
+    &__card-title {
+        position: relative;
+        max-width: 1040px;
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        color: var(--white);
+        margin-left: 77px;
+        margin-bottom: 68px;
+        & span{
+            font-weight: 800;
+            color: var(--red);
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 104px;
+            left: -4px;
+            width: 1044px;
+            height: 11px;
+            background-image: url('../images/ermak-card-decor.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__card-info-block {
+        display: flex;
+        margin-left: 77px;
+        margin-bottom: 52px;
+    }
+
+    &__card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 43px;
+        
+        
+    }
+
+    &__card-info-last{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    &__card-years {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+        color: var(--white);
+        margin-bottom: 9px;
+    }
+
+    &__card-descr {
+        max-width: 207px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: var(--white);
+    }
+
+    &__card-descr-last{
+        max-width: 270px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: var(--white);
+
+    }
+
+    &__card-img-block{
+        display: flex;
+    }
+
+    &__card-img{
+        width: 383px;
+        height: 190px;
+
+        & img{
+            object-fit: cover;
+            width: 394px;
+            height: 190px;
+
+        }
+
+    }
+
+    //slider-top
+    &__slider-top-block {
+        display: flex;
+    }
+    &__slider-top-title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 560px;
+        margin-right: 44px;
+    }
+
+    &__slider-top-title {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+        margin-bottom: 29px;
+    }
+    &__slider-top-subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+        max-width: 497px;
+        margin-bottom: 82px;
+    }
+
+    &__btns {
+        display: flex;
+    }
+    &__top-btn-next {
+        position: relative;
+        background-image: url('../images/ermak-top-next.svg');
+        background-repeat: no-repeat;
+        width: 83px;
+        height: 83px;
+        cursor: pointer;
+        z-index: 20;
+    }
+    &__top-btn-prev {
+        position: relative;
+        background-image: url('../images/ermak-top-prev.svg');
+        background-repeat: no-repeat;
+        width: 83px;
+        height: 83px;
+        cursor: pointer;
+        margin-right: 10px;
+        z-index: 20;
+    }
+
+
+    &__top-swiper {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 20px;
+        
+    }
+    &__top-swiper-wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__top-slide {
+        position: relative;
+        border: 1px solid var(--black-blue);
+        width: 500px;
+        height: 482px;
+        & img{
+          position: relative;
+          top: -22px;
+          left: 21px;
+          width: 555px;
+          height: 490px;
+        }
+    }
+
+    // patent-list
+
+    &__patent-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 82px;
+    }
+
+    &__patent-title {
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+        margin-bottom: 65px;
+    }
+
+    &__patent-ticker{
+       width: 100%;
+       overflow: hidden;
+       position: relative;
+    }
+
+    &__patent-list {
+        display: flex;
+        width: calc(331px * 35);
+        animation: ticker 180s linear infinite; 
+    }
+
+    &__patent-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        flex-wrap: nowrap;
+        padding-right: 42px;
+       
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;        
+            background-color: rgba(0, 0, 0, 0.4);
+            background-repeat: no-repeat;
+            width: 89%;
+            height: 100%;
+            opacity: 0;
+            transition-property: opacity;
+            transition: .3s ease-in-out;
+
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 45%;
+            left: 37%;        
+            background-image: url('../images/patent-loops.svg');
+            background-repeat: no-repeat;
+            width: 57px;
+            height: 57px;
+            opacity: 0;
+            transition-property: opacity;
+            transition: .3s ease-in-out;
+
+
+
+        }
+
+        &:hover::before {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        
+        &:hover::after {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+    
+
+    }
+
+    @keyframes ticker {
+        0%{
+           transform: translateZ(0);
+        }
+
+        to{
+           transform: translate3d(-100%, 0, 0);
+        }
+    }
+    
+    // map
+    &__map-block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 28px;
+        z-index: 50;
+    }
+
+    &__map-title {
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 93px;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+        margin-bottom: 51px;
+    }
+    &__mam-list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__map-item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(32,35,41, 0.5);
+        padding-bottom: 29px;
+    }
+    &__map-addres {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+    }
+    &__map-icons-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__map-action {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+        margin-right: 16px;
+    }
+
+    &__map-icon {
+        position: relative;
+        width: 63px;
+        height: 63px;
+        background: rgba(32,35,41, 0.1);
+        cursor: pointer;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 21px;
+            width: 18px;
+            height: 27px;
+            background-image: url('../images/ermak__map.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    // slider-bottom
+
+    &__bottom-slider-block {
+        display: flex;
+    }
+    &__bottom-slider-title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 545px;
+        margin-right: 73px;
+    }
+
+    &__bottom-slider-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: var(--black-blue);
+        margin-bottom: 85px;
+    }
+
+    &__bottom-slider-subtitle {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        color: var(--black-blue);
+        margin-bottom: 93px;
+        max-width: 500px;
+    }
+
+    &__bottom-btn {
+        position: relative;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: var(--white);
+        background: #E8833E;
+        box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        min-height: 90px;
+        border: none;
+        padding: 0px 105px 0px 53px;
+        cursor: pointer;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 26px;
+            right: 40px;
+            width: 33px;
+            height: 33px;
+            background-image: url('../images/ermak-btn-call.svg');
+            background-repeat: no-repeat;
+        
+        }
+
+        &:hover{
+            background: linear-gradient(94.06deg, #E5803B 10.58%, #E26008 98.01%);
+            box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+
+        }
+
+        &:active{
+            background: #DD5B03;
+            box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+
+        }
+    }
+
+    &__bottom-swiper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 560px;
+        padding-top: 69px;
+        padding-bottom: 108px;
+        z-index: 5;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -688px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #EEEEEE 87.8%, rgba(238, 238, 238, 0) 162.23%);
+            background-repeat: no-repeat;
+            z-index: 10;
+           
+        }
+
+        
+    }
+    &__bottom-swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 2240px;
+    }
+
+    &__bottom-slide {
+        width: 560px;
+        height: 560px;
+        & img{
+            width: 560px;
+            height: 560px;
+        }
+    }
+
+    &-patent__top-btn-prev{
+        display: none;
+    }
+
+    &-patent__top-btn-next{
+        display: none;
+    }
+
+
+    &__patent-swiper{
+        overflow: hidden;
+        max-width: 1818px;
+        margin-bottom: 30px;
+
+    }
+
+    
+    &__patent-swiper-wrapper{
+        display: flex;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1340px) {
+        &{
+            background-size: cover;
+        }
+
+        &__card-title{
+            font-size: 20px;
+            &::before{
+                background-size: contain;
+                max-width: 876px;
+            }
+        }
+
+        &__card-info{
+            margin-right: 15px;
+        }
+
+        &__card-descr{
+            font-size: 12px;
+        }
+
+        &__card-info-last{
+            margin-left: 0px;
+        }
+
+        &__card-descr-last{
+            font-size: 12px;
+        }
+
+        &__card-img{
+            max-width: 298px;
+            & img{
+                max-width: 384px;
+            }
+        }
+
+        &__slider-top-title-block{
+            max-width: 450px;
+        }
+
+        &__slider-top-title{
+            font-size: 25px;
+        }
+
+        &__slider-top-subtitle{
+            font-size: 18px;
+        }
+
+        &__top-swiper{
+            max-width: 45%;
+        }
+
+        &__top-slide{
+            height: 415px;
+            & img{
+                max-width: 450px;
+                height: 420px;
+            }
+        }
+
+        &__patent-item{
+            & img{
+                object-fit: contain;
+                max-width: 260px;
+            }
+
+        }
+
+        &__map-addres{
+            font-size: 25px;
+        }
+
+        
+        &__patent-swiper{
+            overflow: hidden;
+            max-width: 863px;
+            margin-bottom: 30px;
+
+        }
+        
+    }
+
+    @media screen and (max-width: 1017px) {
+        &__card-img{
+            max-width: 298px;
+            & img{
+                max-width: 360px;
+            }
+        }
+
+    }
+    @media screen and (max-width: 992px) {
+        &{
+            padding-top: 80px;
+        }
+
+        &__title{
+           font-size: 60px;
+        }
+
+        &__subtitle{
+            font-size: 32px;
+        }
+
+
+        &__card-title{
+            margin-left: 0px;
+            padding-left: 10px;
+            font-size: 17px;
+            &::before{
+                max-width: 700px;
+                top: 120px;
+            }
+        }
+
+        &__card-info-block{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 0px;
+        }
+
+        &__card-img{
+            & img{
+                max-width: 246px;
+               
+            }
+        }
+
+        &__slider-top-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__slider-top-title-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-right: 0px;
+        }
+
+        &__slider-top-title{
+            text-align: center;
+        }
+
+        &__slider-top-subtitle{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &__top-swiper{
+            max-width: 61%;
+        }
+
+        &__patent-title{
+            font-size: 28px;
+        }
+
+        &__patent-list{
+            margin-left: 0px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__patent-item{
+            & img{
+                height: 350px;
+            }
+        }
+
+        &__map-title{
+            font-size: 60px;
+        }
+
+        &__map-addres{
+            max-width: 450px;
+        }
+
+        &__bottom-slider-title-block{
+            margin-right: 15px;
+        }
+
+        &__bottom-slider-title{
+            font-size: 27px;
+            margin-bottom: 50px;
+        }
+
+        &__bottom-slider-subtitle{
+            font-size: 21px;
+        }
+
+        &__bottom-slide{
+            & img{
+                // height: 400px;
+            }
+        }
+
+        &__patent-swiper{
+            position: relative;
+            overflow: hidden;
+            max-width: 540px;
+            margin-bottom: 30px;
+
+        }
+
+        &-patent__top-btn-prev{
+            position: relative;
+            display: block;
+            background-image: url('../images/ermak-top-prev.svg');
+            background-repeat: no-repeat;
+            width: 83px;
+            height: 83px;
+            cursor: pointer;
+            z-index: 20;
+            
+        }
+    
+        &-patent__top-btn-next{
+            position: relative;
+            display: block;
+            background-image: url('../images/ermak-top-next.svg');
+            background-repeat: no-repeat;
+            width: 83px;
+            height: 83px;
+            cursor: pointer;
+            z-index: 20;
+        }
+    
+    }
+    @media screen and (max-width: 768px) {
+        &{
+            padding-top: 30px;
+            
+        }
+
+        &__title{
+            font-size: 50px;
+        }
+
+        &__subtitle{
+            font-size: 24px;
+        }
+
+        &__title-block{
+            margin-bottom: 30px;
+           
+        }
+
+        &__card{
+            margin-bottom: 30px;
+        }
+
+        &__top-content{
+            margin-bottom: 30px;
+        }
+
+        &__card-title{
+            text-align: center;
+            &::before{
+                display: none;
+            }
+        }
+
+        &__card-info-block{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-left: 30px;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 212px;
+                left: -147px;
+                width: 428px;
+                height: 11px;
+                background-image: url('../images/ermak-card-decor.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: rotate(90deg);
+            }
+        }
+
+        &__card-descr{
+            max-width: 400px;
+        }
+
+        &__card-descr-last{
+            max-width: 400px;
+        }
+
+        &__card-info{
+            margin-bottom: 15px;
+            margin-right: 0px;
+        }
+
+        &__card-img-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__card-img{
+            max-width: 100%;
+            & img{
+                max-width: 100%;
+            }
+        }
+
+        &__top-swiper{
+            max-width: 80%;
+        }
+
+        &__map-block{
+            margin-bottom: 30px;
+        }
+
+        &__map-title{
+            font-size: 45px;
+        }
+
+        &__map-addres{
+            font-size: 18px;
+            max-width: 350px;
+        }
+
+        &__map-icon{
+            width: 50px;
+            height: 50px;
+            &::before{
+                top: 10px;
+                left: 16px;
+            }
+        }
+
+        &__bottom-slider-block{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__bottom-slider-title{
+            margin-bottom: 30px;
+        }
+
+        &__bottom-slider-subtitle{
+            margin-bottom: 30px;
+        }
+    
+    }
+    @media screen and (max-width: 576px) {
+        &__title{
+            font-size: 19px;
+            line-height: 140%;
+        }
+
+        &__subtitle{
+            font-size: 13px;
+            line-height: 140%;
+        }
+
+        &__card{
+            padding-top: 20px;
+        }
+
+        &__card-title{
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 30px;
+            line-height: 140%;
+        }
+
+        &__card-info-block{
+            &::before{
+                top: 288px;
+                left: -275px;
+                width: 580px;
+            }
+        }
+
+        &__slider-top-title{
+           font-size: 19px;
+           line-height: 140%;
+        }
+
+        &__slider-top-subtitle{
+            font-size: 17px;
+        }
+
+        &__top-swiper{
+            max-width: 100%;
+        }
+
+        &__top-slide{
+            height: 350px;
+            & img{
+                max-width: 320px;
+                height: 360px;
+                object-fit: cover;
+            }
+        }
+
+        &__patent-title{
+            font-size: 19px;
+            line-height: 140%;
+            margin-bottom: 30px;
+        }
+
+        &__patent-block{
+            margin-bottom: 30px;
+        }
+
+        &__patent-list{
+        
+        }
+
+        &__patent-item{
+            margin-right: 0px;
+        }
+
+        &__patent-slider-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__patent-swiper{
+            overflow: hidden;
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        &__patent-swiper-wrapper{
+            display: flex;
+            width: 100%;
+        }
+
+        &__patent-slide{
+            width: 100%;
+            & img{
+                object-fit: contain;
+                max-width: 290px;
+                height: 350px;
+
+            }
+
+        }
+
+        &__map-item{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__map-title{
+            font-size: 28px;
+            line-height: 140%;
+            text-align: center;
+        }
+
+        &__map-addres{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        &__bottom-slider-title-block{
+            margin-right: 0px;
+        }
+
+        &__bottom-slider-title{
+            font-size: 18px;
+            line-height: 140%;
+        }
+
+        &__bottom-slider-subtitle{
+            font-size: 15px;
+            line-height: 180%;
+        }
+
+        &__bottom-btn{
+            font-size: 14px;
+            min-height: 80px;
+            &::after{
+                top: 21px;
+            }
+        }
+
+        &__top-btn-next{
+            background-size: contain;
+            width: 57px;
+            height: 57px;
+
+        }
+
+        &__top-btn-prev{
+            background-size: contain;
+            width: 57px;
+            height: 57px;
+
+        }
+
+        
+        &-patent__top-btn-next{
+            background-size: contain;
+            width: 57px;
+            height: 57px;
+
+        }
+
+        &-patent__top-btn-prev{
+            background-size: contain;
+            width: 57px;
+            height: 57px;
+
+        }
+    
+    }
+    @media screen and (max-width: 350px) {
+    
+    }
+
+   
+}
+

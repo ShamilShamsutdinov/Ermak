@@ -1,0 +1,50 @@
+.modal{
+
+    &__patent {
+        width: 639px;
+        height: 900px;
+        padding: 0px;
+        position: relative;
+        display: none;
+      
+    }
+    &__patent-big {
+    }
+    &__patent-small {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__patent{
+            width: 330px;
+            height: 464px;
+        }
+        &__patent-big{
+            display: none;
+        }
+
+        &__patent-small{
+            display: block;
+        }
+    }
+
+    
+    @media screen and (max-width: 350px) {
+        &__patent{
+            width: 290px;
+            height: 400px;
+        }
+        &__patent-big{
+            display: none;
+        }
+
+        &__patent-small{
+            display: block;
+            object-fit: contain;
+            width: 290px;
+            height: 400px;
+        }
+    }
+
+
+}

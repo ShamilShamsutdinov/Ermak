@@ -1,0 +1,233 @@
+.modal{
+
+    &__box-call {
+        position: relative;
+        max-width: 1040px;
+        height: 615px;
+        background: var(--white);
+        box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        padding: 0px;
+        display: none;
+       
+    }
+
+    &__box-mail{
+        position: relative;
+        max-width: 1040px;
+        height: 615px;
+        background: var(--white);
+        box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        padding: 0px;
+        display: none;
+       
+
+    }
+
+    &__box-consultation{
+        position: relative;
+        max-width: 1040px;
+        height: 615px;
+        background: var(--white);
+        box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        padding: 0px;
+        display: none;
+       
+
+    }
+
+    &-call__content {
+        display: flex;
+    }
+
+    &-call__left {
+        padding: 58px 56px 0px 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-call__title-block {
+        margin-bottom: 30px;
+    }
+
+    &-call__title {
+        max-width: 380px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: var(--black);
+    }
+
+    &__mail-right{
+        background: rgb(#202329, 0.2);
+        border-radius: 16px;
+        & img{
+           object-fit: contain;
+           width: 476px;
+           height: 615px;
+        }
+
+    }
+
+    &__call-right {
+        & img{
+            border-radius: 16px;
+        }
+    }
+
+    @media screen and (max-width: 1340px) {
+       
+    }
+    @media screen and (max-width: 992px) {
+        &-call__content{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__call-right {
+            & img{
+               display: none;
+            }
+        }
+
+        &__mail-right{
+            display: none;
+        }
+
+        &-call__left{
+            position: relative;
+            z-index: 10;
+        }
+
+        &__box-call{
+            position: relative;
+            z-index: 10;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                right: 0px;
+                background-image: url('../images/modal-call.webp');
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+                border-radius: 16px;
+                z-index: 5;
+            }
+
+           
+            
+        }
+
+        &__box-mail{
+            position: relative;
+            height: 114%;
+            z-index: 10;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                right: 0px;
+                background-image: url('../images/modal-mail.webp');
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+                border-radius: 16px;
+                z-index: 5;
+            }
+
+         
+         
+            
+        }
+
+        &__box-consultation{
+            position: relative;
+            height: 109%;
+            z-index: 10;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                right: 0px;
+                background-image: url('../images/modal-consultation.webp');
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+                border-radius: 16px;
+                z-index: 5;
+            }
+
+           
+            
+        }
+    
+    }
+    @media screen and (max-width: 768px) {
+        &__box-consultation{
+            height: 550px;
+        }
+
+        &__box-call{
+            height: 550px;
+        }
+
+        &__box-mail{
+            height: 550px;
+        }
+
+        &-call__left{
+            padding: 20px;
+        }
+    
+    }
+    @media screen and (max-width: 576px) {
+        &__box-consultation{
+            max-width: 290px;
+            height: 515px;
+            &::before{
+                display: none;
+            }
+        }
+
+        &__box-call{
+            max-width: 290px;
+            height: 515px;
+            &::before{
+                display: none;
+            }
+        }
+
+        &__box-mail{
+            max-width: 290px;
+            height: 515px;
+            &::before{
+                display: none;
+            }
+        }
+
+        &-call__left{
+            padding: 20px;
+        }
+
+        &-call__title{
+            font-size: 13px;
+        }
+    
+    }
+    @media screen and (max-width: 350px) {
+    
+    }
+
+}
+

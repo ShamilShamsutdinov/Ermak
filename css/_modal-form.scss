@@ -1,0 +1,187 @@
+.modal-form {
+ 
+
+&__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+&__input-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+&__input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 380px;
+  min-height: 66px;
+  padding: 0px 9px 0px 54px;
+  background: rgba(70, 70, 70, 0.1);
+  border: none;
+  margin-bottom: 8px;
+}
+
+&__input::placeholder{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: left;
+  color: #0B0B0B;
+  opacity: 0.6;
+}
+
+
+&__label {
+  position: relative;
+}
+
+&__label-phone::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/input-call.svg');
+  background-repeat: no-repeat;
+}
+
+&__label-mail::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/input-mail.svg');
+  background-repeat: no-repeat;
+  margin-bottom: 26px;
+}
+&__label-name::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/input-avatar.svg');
+  background-repeat: no-repeat;
+}
+
+&__btn {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background: linear-gradient(94.06deg, #E5803B 10.58%, #E26008 98.01%);
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  min-height: 90px;
+  padding: 0px 100px 0px 40px;
+  cursor: pointer;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/modal-btn.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+// &__btn:hover {
+//   background: linear-gradient(86.34deg, #D014EF 0.44%, #85049A 99.61%);
+//   box-shadow: 0px 18px 35px rgba(175, 13, 201, 0.5), 0px 3px 0px #AF0DC9, inset 0px -4px 10px #D746EF, inset 0px 4px 7px #D746EF;
+//   border-radius: 20px;
+  
+// }
+
+// &__btn:active { 
+//   background: #CB13E9;
+//   box-shadow: 0px 3px 0px #AF0DC9, 0px 18px 35px rgba(175, 13, 201, 0.5);
+//   border-radius: 20px;
+  
+// }
+
+&__confirm {
+  position: relative;
+  max-width: 361px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: #181818;
+}
+
+&__confirm::before{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  left: -27px;
+  background-image: url('../images/modal-confirm.svg');
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+&__confirm a {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: #181818;
+}
+
+@media screen and (max-width: 576px) {
+  &__input{
+    max-width: 200px;
+  }
+
+  &__btn {
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    background: linear-gradient(94.06deg, #E5803B 10.58%, #E26008 98.01%);
+    box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    min-height: 80px;
+    padding: 0px 50px 0px 25px;
+    cursor: pointer;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 27px;
+      right: 13px;
+      width: 30px;
+      height: 30px;
+      background-image: url('../images/modal-btn.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__confirm{
+    max-width: 214px;
+    font-size: 10px;
+  }
+
+}
+
+}
